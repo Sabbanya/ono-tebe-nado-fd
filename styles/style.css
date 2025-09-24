@@ -15,7 +15,7 @@
 
 .header__links-list{
     display: flex;
-    gap: 26px;
+    gap: 26px; /* Проверить отступ*/
     list-style: circle;
 }
 .header__link{
@@ -40,6 +40,9 @@
     flex-direction: column;
     align-items: flex-start;
     /* Поправить шрифт */
+}
+.header__address{
+    width: 240px;
 }
 /*COVER*/
 .cover{
@@ -102,15 +105,15 @@
 .lots__card-list-item{
     width: 334px;
     height: 596px;
-    position: relative;
-    z-index: 2;
+    
     
 }
 .lots__card-list{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     list-style: none;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 .card-link , .card{
     height: 100%;
@@ -131,13 +134,14 @@
     background-size: cover;
     background-position: center;
 }
-/*-------поправить оверлей-----------*/
 .card{
     color: #fff;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 48px 40px;
+    position: relative;
+    z-index: 2;
 }
 .card-link{
     text-decoration: none;
@@ -156,4 +160,77 @@
     text-transform: lowercase;
     padding-top: 30px;
     padding-left: 40px;
+}
+
+/*ABOUT*/
+.about{
+    padding-top: 155px;
+}
+.about__description{
+    padding-top: 100px;
+}
+.about__logo{
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 150px;
+    display: flex;
+    padding: 65px 47px 62px 50px;
+    margin-left: 40px;
+}
+.about__logo-image{
+    align-items: center;
+    justify-content: center;
+}
+.about__column{
+    display: grid;
+    grid-template-columns: 334px 1fr;
+}
+.about__title{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+.about__description-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Проверить отступ*/
+}
+.about__text{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/*FOOTER*/
+
+.footer{
+    padding-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-bottom: 80px;
+}
+.footer__social-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    gap: 20px; /* Сверить */
+    
+}
+.footer__menu{
+    text-align: center;
+}
+.footer__menu-list{
+    list-style: none;
+}
+.footer__social-list-item{
+    width: 48px;
+}
+.footer__menu-link_active{
+    text-decoration: none;
+}
+.footer__address{
+    width: 260px;
 }

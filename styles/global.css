@@ -39,9 +39,6 @@ img {
 button {
   font: inherit;
 }
-address{
-  max-width: 240px;
-}
 .overlay{
   position: absolute;
   background-color: rgb(0, 0, 0, 0.7);
