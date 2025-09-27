@@ -29,9 +29,11 @@ a {
   color: inherit;
   display: block;
 }
+
 span{
   display: block;
 }
+
 img {
   width: 100%;
 }
@@ -39,19 +41,22 @@ img {
 button {
   font: inherit;
 }
+
 .overlay{
   position: absolute;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.6);
   top:0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: -1;
 }
+
 address{
   font-style: normal;
 }
+
 .address{
-  margin-top: 15px;
+
   line-height: 24px;
 }

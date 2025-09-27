@@ -1,14 +1,13 @@
-/* HEADER */
-
+/* Шапка */
 .header{
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px;
+    padding: 78px 50px 81px;
 }
 
+/* Навигационное меню в шапке*/
 .header__links-list{
-    padding-top: 12px;
     display: flex;
     gap: 34px;
     list-style: circle;
@@ -29,10 +28,15 @@
     list-style: none;
 }
 
+/*Логотип в шапке*/
 .header__logo{
     width: 148px;
 }
+.header__logo-image{
+    padding: 13px 7px;
+}
 
+/*Блок с адресом в шапке*/
 .address{
     font-size: 18px;
     justify-self:end;
@@ -42,10 +46,7 @@
     width: 240px;
 }
 
-
-
-/*COVER*/
-
+/*Обложка*/
 .cover{
     background-image: url("../images/cover.jpg");
     background-size: cover;
@@ -53,10 +54,11 @@
     min-height: 757px;
     position: relative;
     z-index: 2;
-    padding: 158px 20px 50px 50px;
+    padding: 155px 20px 50px 50px;
     color: #fff;
 }
 
+/*Стилизация текст в блоке Обложка*/
 .aligned-text{
     font-size: 100px;
     font-weight: bold;
@@ -77,6 +79,7 @@
     text-align: right;
 }
 
+/*Подзаголовок блоке Обложка*/
 .cover__description{
     padding-top: 97px;
     display: flex;
@@ -87,12 +90,13 @@
 .cover__description-text{
     text-transform: uppercase;
     font-size: 22px;
-    word-spacing: 18px;
+    word-spacing: 19px;
 }
 
+/*Кнопка блоке Обложка*/
 .bet-button{
     background-color: transparent;
-    margin-left: 111px;
+    margin-left: 106px;
     color: #fff;
     padding: 11px 32px;
     font-size: 22px;
@@ -101,15 +105,12 @@
     cursor: pointer;
 }
 
-
-
-
-/* LOTS*/
-
+/* Блок Лоты*/
 .lots{
-    margin-top: 177px;
+    margin-top: 180px;
 }
 
+/*Заголовок блока Лоты*/
 .lots__heading{
     text-transform: uppercase;
     font-size: 40px;
@@ -118,6 +119,7 @@
     padding-left: 65px;
 }
 
+/* Карточки блока Лоты*/
 .lots__card-list-item{
     width: 334px;
     height: 596px;
@@ -180,6 +182,7 @@
     font-size: 20px;
 }
 
+/*Кнопка посмотреть больше блока Лоты*/
 .lots__look-more-link{
     font-size: 20px;
     text-transform: lowercase;
@@ -187,21 +190,19 @@
     padding-left: 65px;
 }
 
-
-
-
-/*ABOUT*/
-
+/*Блок Об Аукционе*/
 .about{
     padding-top: 154px;
     padding-left: 30px;
 }
 
-.about__description{
-    padding-top: 100px;
-    padding-left: 20px;
+.about__column{
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    gap: 20px;
 }
 
+/* Логотип блока Об Аукционе */
 .about__logo{
     width: 240px;
     height: 240px;
@@ -217,11 +218,12 @@
     justify-content: center;
 }
 
-.about__column{
-    display: grid;
-    grid-template-columns: 334px 1fr;
+/* Отступы текстового блока Об Аукционе*/
+.about__description{
+    padding-top: 100px;
 }
 
+/*Загаловок */
 .about__title{
     font-size: 40px;
     font-weight: bold;
@@ -229,10 +231,11 @@
     margin-bottom: 100px;
 }
 
+/*Текст Об Аукционе*/
 .about__description-text{
     display: flex;
     flex-direction: column;
-    gap: 25px; 
+    gap: 23px; 
 }
 
 .about__text{
@@ -240,17 +243,22 @@
     line-height: 24px;
 }
 
+.about__text:first-child{
+    max-width: 683px;
+}
 
+.about__text:last-child{
+    max-width: 693px;
+}
 
-
-/*FOOTER*/
-
+/*Подвал*/
 .footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 190px 50px 80px 50px;
+    padding: 170px 50px 82px 50px;
 }
 
+/* Социальные сети в подвале */
 .footer__social-list{
     display: flex;
     padding-top: 10px;
@@ -260,9 +268,14 @@
     gap: 48px;
 }
 
+.footer__social-list-item{
+    width: 48px;
+}
+
+/* Навигация в подвале */
 .footer__menu{
     text-align: center;
-    padding-top: 16px;
+    padding-top: 13px;
 }
 
 .footer__menu-list{
@@ -273,15 +286,14 @@
     font-size: 18px;
 }
 
-.footer__social-list-item{
-    width: 48px;
-}
 
 .footer__menu-link_active{
     text-decoration: none;
 }
 
+/* Адрес подвала */
 .footer__address{
+    margin-top: 13px;
     width: 260px;
     justify-self:start;
 }
