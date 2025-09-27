@@ -49,6 +49,7 @@
 /*Обложка*/
 .cover{
     background-image: url("../images/cover.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 757px;
@@ -84,7 +85,6 @@
     padding-top: 97px;
     display: flex;
     align-items: center;
-
 }
 
 .cover__description-text{
@@ -115,49 +115,34 @@
     text-transform: uppercase;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 27px;
+    margin-bottom: 4px;
     padding-left: 65px;
 }
 
 /* Карточки блока Лоты*/
-.lots__card-list-item{
-    width: 334px;
-    height: 596px;
-}
-
 .lots__card-list{
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
     flex-wrap: wrap;
-    padding: 0 25px;
-}
-
-.card-link , .card{
-    height: 100%;
-    width: 100%;
+    padding: 0px 25px; 
 }
 
 .card_type_film{
     background-image: url("../images/card-lot-01.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_book{
     background-image: url("../images/card-lot-02.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_picture{
     background-image: url("../images/card-lot-03.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .card{
+    margin: 25px 0;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -165,6 +150,10 @@
     padding: 48px 40px;
     position: relative;
     z-index: 2;
+    min-height: 596px;
+    width: 334px;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-link{
@@ -186,7 +175,7 @@
 .lots__look-more-link{
     font-size: 20px;
     text-transform: lowercase;
-    padding-top: 32px;
+    padding-top: 7px;
     padding-left: 65px;
 }
 
@@ -207,7 +196,7 @@
     width: 240px;
     height: 240px;
     background-color: #000;
-    border-radius: 150px;
+    border-radius: 50%;
     display: flex;
     padding: 65px 47px 62px 50px;
     margin-left: 40px;
@@ -286,7 +275,6 @@
     font-size: 18px;
 }
 
-
 .footer__menu-link_active{
     text-decoration: none;
 }
@@ -296,4 +284,20 @@
     margin-top: 13px;
     width: 260px;
     justify-self:start;
+}
+
+/* Другое */
+.overlay{
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.6);
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.address{
+  font-style: normal;
+  line-height: 24px;
 }

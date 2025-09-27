@@ -10,7 +10,9 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
+    <!--Шапка сайта-->
     <header class="header" id="header">
+      <!--Навигация шапки-->
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
@@ -24,6 +26,7 @@
           </li>
         </ul>
       </nav>
+      <!--Логотип шапки-->
       <div class="header__logo">
         <a>
           <img
@@ -32,30 +35,40 @@
             class="header__logo-image">
         </a>
       </div>
+      <!--Блок адресса шапки-->
       <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <span>наб. Принсенграхт 263- 265, Амстердам</span>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main>
+      <!--Обложка страницы ( входная секция )-->
       <section class="cover">
+        <!--Заголовок обложки-->
         <h1 class="cover__title">
           <span class="aligned-text aligned-text_left">оно</span>
           <span class="aligned-text aligned-text_center">тебе</span>
           <span class="aligned-text aligned-text_right">надо</span>
         </h1>
+        <!--Подзаголовок обложки-->
         <div class="cover__description">
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">Сделать ставку</button>
+          <!--Кнопка обложки-->
+          <button type="button" class="bet-button">Сделать ставку</button>
         </div>
+        <!--Оверлей обложки-->
         <div class="overlay"></div>
       </section>
+      <!--Блок Лотов-->
       <section class="lots" id="lots">
+        <!--Заголовок Лотов-->
         <h2 class="lots__heading">Лоты</h2>
+        <!--Список карточек в блоке Лотов-->
         <ul class="lots__card-list">
+          <!--Карточка лота-->
           <li class="lots__card-list-item">
             <a href="" class="card-link"
               ><article class="card card_type_film">
@@ -70,8 +83,9 @@
                 <div class="overlay"></div></article
             ></a>
           </li>
+          <!--Карточка лота-->
           <li class="lots__card-list-item">
-            <a href="" class="card-link"
+            <a class="card-link"
               ><article class="card card_type_book">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -87,7 +101,7 @@
                 <div class="overlay"></div></article
             ></a>
           </li>
-
+          <!--Карточка лота-->
           <li class="lots__card-list-item">
             <a href="" class="card-link"
               ><article class="card card_type_picture">
@@ -104,16 +118,20 @@
             ></a>
           </li>
         </ul>
+        <!--Кнопка посмотреть больше в лотах-->
         <a href="#" class="lots__look-more-link">посмотреть больше</a>
       </section>
+      <!--Блок Об Аукционе-->
       <section class="about" id="about">
         <div class="about__column">
+          <!--Картинка Об Аукционе-->
           <div class="about__logo">
             <img
               src="./images/logo-white.svg"
               alt="Логотип белый"
               class="about__logo-image">
           </div>
+          <!--Текстовый блок Об Аукционе-->
           <div class="about__description">
             <h2 class="about__title">Об аукционе</h2>
             <div class="about__description-text">
@@ -137,12 +155,15 @@
         </div>
       </section>
     </main>
+    <!--Подвал сайта-->
     <footer class="footer">
+      <!--Адресс в подвале-->
       <address class="address footer__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <span>наб. Принсенграхт 263-265, Амстердам</span>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
+      <!--Навигационное меню в подвале-->
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
@@ -152,14 +173,15 @@
           <li class="footer__menu-list-item"><a href="#about" class="footer__menu-link">об аукционе</a></li>
         </ul>
       </nav>
+      <!--Список соц сетей в подвале-->
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a href="" class="footer__social-link">
+          <a href="" class="footer__social-link" target="_blank">
             <img src="./images/yt.svg" alt="Ютуб" class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="" class="footer__social-link">
+          <a href="" class="footer__social-link" target="_blank">
             <img
               src="./images/vk.svg"
               alt="ВКонтакте"
@@ -167,7 +189,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="" class="footer__social-link">
+          <a href="" class="footer__social-link" target="_blank">
             <img
               src="./images/pinterest.svg"
               alt="Пинтерест"
